@@ -45,4 +45,16 @@ window.onload = function()
     {
         addText2.appendChild(addText);
     }
+
+    let click = document.querySelector(".cart-btn");
+    let count = 0;
+
+    if (click)
+    {
+        click.addEventListener("click", function()
+        {
+            count++;
+            addText.textContent = "In cart: " + count;
+        });
+    }
 };
